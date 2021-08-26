@@ -1,6 +1,6 @@
 import "tfplan" as tfplan
 compute_instances = tfplan.resources.google_computer_instance
-allowed_machine_types = ["n1-standard-2", "e2-micro", "e2-small"]
+allowed_machine_types = ["n1-standard-2", "f1-micro", "e2-small"]
 machine_type_allowed = rule {
   all compute_instances as name, instances {
     all instances as index, r {
